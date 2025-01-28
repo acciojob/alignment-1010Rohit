@@ -7,18 +7,19 @@
     <style>
         /* General styling for tables */
         table {
-            border-collapse: collapse;
+           
             width: 100%;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
-            text-align: center;
+           
         }
 
         .middle {
             margin: 20px auto;
+			border:1px solid black;
         }
 
         .green {
@@ -41,8 +42,20 @@
 
         /* Optional: Adding more spacing for clarity */
         table, td, th {
-            padding: 5px;
+            padding: 1px;
         }
+		#t11{
+			text-align:left;
+		}
+		#t12{
+			text-align:center;
+		}
+		#t13{
+			text-align:right
+		}
+		#t-image{
+			align-items:center;
+		}
     </style>
 </head>
 <body>
@@ -53,79 +66,74 @@
     <!-- Table 1 -->
     <table class="middle" id="table-1">
         <tr>
-            <td id="t11">Cell 1</td>
-            <td id="t12">Cell 2</td>
-            <td id="t13">Cell 3</td>
+            <td id="t11">left</td>
+            <td id="t12">Center</td>
+            <td id="t13">right</td>
         </tr>
         <tr class="center">
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-            <td>Cell 6</td>
+            <td  id="t11">left</td>
+            <td id="t12">Center</td>
+            <td id="t13">right</td>
         </tr>
         <tr class="right">
-            <td>Cell 7</td>
-            <td>Cell 8</td>
-            <td>Cell 9</td>
+            <td id="t11">left</td>
+            <td id="t12">center</td>
+            <td id="t13">right</td>
         </tr>
     </table>
 
     <!-- Table 2 -->
     <table class="middle" id="table-2">
         <tr>
-            <td id="t21" colspan="6">This is a single cell spanning all columns</td>
+            <td id="t21" colspan="6"></td>
         </tr>
         <tr>
-            <td>Row 2, Cell 1</td>
-            <td>Row 2, Cell 2</td>
-            <td>Row 2, Cell 3</td>
-            <td>Row 2, Cell 4</td>
-            <td>Row 2, Cell 5</td>
-            <td>Row 2, Cell 6</td>
+            <td rowspan="4"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
-            <td>Row 3, Cell 1</td>
-            <td>Row 3, Cell 2</td>
-            <td>Row 3, Cell 3</td>
-            <td>Row 3, Cell 4</td>
-            <td>Row 3, Cell 5</td>
-            <td>Row 3, Cell 6</td>
+            <td></td>
+            <td rowspan=2 colspan=3></td>
+            <td></td>
+           
+            
         </tr>
         <tr>
-            <td>Row 4, Cell 1</td>
-            <td>Row 4, Cell 2</td>
-            <td>Row 4, Cell 3</td>
-            <td>Row 4, Cell 4</td>
-            <td>Row 4, Cell 5</td>
-            <td>Row 4, Cell 6</td>
+            <td></td>
+            <td></td>
+            
+            
         </tr>
         <tr>
-            <td>Row 5, Cell 1</td>
-            <td>Row 5, Cell 2</td>
-            <td>Row 5, Cell 3</td>
-            <td>Row 5, Cell 4</td>
-            <td>Row 5, Cell 5</td>
-            <td>Row 5, Cell 6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           
         </tr>
         <tr>
-            <td>Row 6, Cell 1</td>
-            <td>Row 6, Cell 2</td>
-            <td>Row 6, Cell 3</td>
-            <td>Row 6, Cell 4</td>
-            <td>Row 6, Cell 5</td>
-            <td>Row 6, Cell 6</td>
+              <td  colspan="6"></td>
         </tr>
     </table>
 
     <!-- Table 3 -->
     <table class="middle" id="table-3">
         <tr class="green">
-            <td>Green Row 1, Cell 1</td>
+            <td colspan=3>G</td>
         </tr>
         <tr id="t-image">
+			<td></td>
             <td><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Image Description"></td>
-        </tr>
+       <Td></Td>
+		</tr>
         <tr class="blue">
-            <td>Blue Row 3, Cell 1</td>
+			
+            <td colspan=3>B</td>
         </tr>
     </table>
 
